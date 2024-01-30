@@ -24,7 +24,10 @@ class MainActivity : AppCompatActivity() {
 
         
         // Respond to button click event per specifications
-
+        clickMeButton.setOnClickListener{
+            //Log.d("MainAct", "Button Click")
+            displayTextView.text = "Hello, ${nameEditText.text}"
+        }
 
     }
 }
